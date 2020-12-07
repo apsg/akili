@@ -19,7 +19,8 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('particles', require('./components/Particles.vue').default);
+Vue.component('panel', require('./components/Panel.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,3 +31,15 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
+$(window).on("scroll", function () {
+    if ($(window).scrollTop()) {
+        $('#nav').removeClass('nav-transparent')
+            .removeClass('navbar-dark')
+            .addClass('navbar-light');
+    } else {
+        $('#nav').addClass('nav-transparent')
+            .removeClass('navbar-light')
+            .addClass('navbar-dark');
+    }
+})
