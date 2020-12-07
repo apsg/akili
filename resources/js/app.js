@@ -21,6 +21,8 @@ window.Vue = require('vue');
 
 Vue.component('particles', require('./components/Particles.vue').default);
 Vue.component('panel', require('./components/Panel.vue').default);
+Vue.component('contact', require('./components/Contact.vue').default);
+Vue.component('scroll-button', require('./components/ScrollButton.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -42,4 +44,11 @@ $(window).on("scroll", function () {
             .removeClass('navbar-light')
             .addClass('navbar-dark');
     }
-})
+});
+
+$('.scrollto').click(function () {
+    let sectionTo = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(sectionTo).offset().top
+    }, 500);
+});

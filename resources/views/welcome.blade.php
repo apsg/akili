@@ -23,7 +23,10 @@
         <div>
             <h2>Psychoterapia</h2>
             <p>Opis psychoterapia</p>
+            <scroll-button scrollto="#kontakt" type="psychoterapia">Kontakt</scroll-button>
         </div>
     </panel>
+
+    <contact></contact>
 
 @endsection

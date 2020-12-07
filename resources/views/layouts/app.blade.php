@@ -39,10 +39,13 @@
                         <a class="nav-link" href="{{ url('/') }}">{{ __("Strona główna") }} <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="{{ url('galeria') }}">{{ __("Galeria") }}</a>
+                        <a class="nav-link" href="{{ url('o-mnie') }}">O mnie</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="{{ url('kontakt') }}">{{ __("Kontakt") }}</a>
+                        <a class="nav-link" href="{{ url('wspolpraca') }}">Współpraca</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="{{ url('/') }}/#kontakt">{{ __("Kontakt") }}</a>
                     </li>
                 </ul>
             </div>

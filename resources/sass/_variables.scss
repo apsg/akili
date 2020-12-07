@@ -19,4 +19,20 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
-$color-primary: #3e3b84;
+$color-gradient-left: #3e3b84;
+$color-gradient-right: #5b1c84;
+
+
+@mixin gradient {
+    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(45deg, $color-gradient-left, $color-gradient-right);
+    background-image: linear-gradient(45deg, $color-gradient-left, $color-gradient-right);
+    opacity: .85;
+}
+
+@mixin gradient-darker {
+    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(45deg, darken($color-gradient-left, 10), darken($color-gradient-right, 10));
+    background-image: linear-gradient(45deg, darken($color-gradient-left, 10), darken($color-gradient-right, 10));
+    opacity: .85;
+}
