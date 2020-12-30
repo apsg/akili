@@ -5,6 +5,7 @@
  */
 
 require('./bootstrap');
+require('../contactform/js/main');
 
 window.Vue = require('vue');
 

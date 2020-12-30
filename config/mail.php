@@ -2,7 +2,7 @@
 
 return [
 
-    'contact' => env('CONTACT_MAIL'),
+    'contact' => env('CONTACT_MAIL', 'kontakt@wzmocnienie.pl'),
 
     /*
     |--------------------------------------------------------------------------

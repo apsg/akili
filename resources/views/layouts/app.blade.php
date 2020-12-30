@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Akili | Psychoterapia Aleksandra Magda') }}</title>
+    <title>{{ config('app.name', 'Akili') }} | {{ config('app.subname') }} | @yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -63,7 +63,7 @@
             </p>
             <p>&copy; Psychoterapia Aleksandra Magda | <a
                     href="mailto:{{ config('mail.contact') }}">{{ config('mail.contact') }}</a></p>
-            <p>Wykonanie: <a href="https://gackowski.edu.pl" target="_blank">Szymon Gackowski</a></p>
+            <p>Projekt i wykonanie: <a href="https://gackowski.edu.pl" target="_blank">Szymon Gackowski</a></p>
         </div>
     </footer>
 </div>

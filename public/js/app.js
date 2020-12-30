@@ -1923,8 +1923,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Contact"
+  name: "Contact",
+  computed: {
+    mail: function mail() {
+      return 'kontakt@wzmocnienie.pl';
+    }
+  }
 });
 
 /***/ }),
@@ -6582,7 +6610,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".contact[data-v-4c2584f6] {\n  background-image: url(\"/images/contact-bg.jpg\");\n  background-position: center center;\n  background-size: cover;\n}\n.contact .container[data-v-4c2584f6] {\n  min-height: 600px;\n}\n.contact .left[data-v-4c2584f6] {\n  background-repeat: no-repeat;\n  background-image: linear-gradient(45deg, #3e3b84, #5b1c84);\n  opacity: 0.85;\n}", ""]);
+exports.push([module.i, ".contact[data-v-4c2584f6] {\n  background-image: url(\"/images/contact-bg.jpg\");\n  background-position: center center;\n  background-size: cover;\n}", ""]);
 
 // exports
 
@@ -38484,16 +38512,83 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "section",
-      { staticClass: "contact py-3", attrs: { id: "#contact" } },
+      { staticClass: "contact ", attrs: { id: "#contact" } },
       [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "d-flex align-items-stretch h-100" }, [
-            _c("div", { staticClass: "col-6 left" }, [
-              _vm._v("\n                a\n            ")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-6 right" }, [
-              _vm._v("\n                b\n            ")
+        _c("div", { staticClass: "container-contact2" }, [
+          _c("div", { staticClass: "wrap-contact2" }, [
+            _c("form", { staticClass: "contact2-form validate-form" }, [
+              _c("span", { staticClass: "contact2-form-title" }, [
+                _vm._v("\n\t\t\t\t\t\tSkontaktuj się ze mną\n\t\t\t\t\t")
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "wrap-input2 validate-input",
+                  attrs: { "data-validate": "Podaj imię" }
+                },
+                [
+                  _c("input", {
+                    staticClass: "input2",
+                    attrs: { type: "text", name: "name" }
+                  }),
+                  _vm._v(" "),
+                  _c("span", {
+                    staticClass: "focus-input2",
+                    attrs: { "data-placeholder": "IMIĘ" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "wrap-input2 validate-input",
+                  attrs: { "data-validate": "Podaj adres email" }
+                },
+                [
+                  _c("input", {
+                    staticClass: "input2",
+                    attrs: { type: "text", name: "email" }
+                  }),
+                  _vm._v(" "),
+                  _c("span", {
+                    staticClass: "focus-input2",
+                    attrs: { "data-placeholder": "EMAIL" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "wrap-input2 validate-input",
+                  attrs: { "data-validate": "Wpisz wiadomość" }
+                },
+                [
+                  _c("textarea", {
+                    staticClass: "input2",
+                    attrs: { name: "message" }
+                  }),
+                  _vm._v(" "),
+                  _c("span", {
+                    staticClass: "focus-input2",
+                    attrs: { "data-placeholder": "WIADOMOŚĆ" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "container-contact2-form-btn" }, [
+                _c("div", { staticClass: "wrap-contact2-form-btn" }, [
+                  _c("div", { staticClass: "contact2-form-bgbtn" }),
+                  _vm._v(" "),
+                  _c("button", { staticClass: "contact2-form-btn" }, [
+                    _vm._v(
+                      "\n                                Wyślij wiadomość\n                            "
+                    )
+                  ])
+                ])
+              ])
             ])
           ])
         ])
@@ -51019,6 +51114,72 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/contactform/js/main.js":
+/*!******************************************!*\
+  !*** ./resources/contactform/js/main.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function ($) {
+  "use strict";
+  /*==================================================================
+  [ Focus Contact2 ]*/
+
+  $('.input2').each(function () {
+    $(this).on('blur', function () {
+      if ($(this).val().trim() != "") {
+        $(this).addClass('has-val');
+      } else {
+        $(this).removeClass('has-val');
+      }
+    });
+  });
+  /*==================================================================
+  [ Validate ]*/
+
+  var name = $('.validate-input input[name="name"]');
+  var email = $('.validate-input input[name="email"]');
+  var message = $('.validate-input textarea[name="message"]');
+  $('.validate-form').on('submit', function () {
+    var check = true;
+
+    if ($(name).val().trim() == '') {
+      showValidate(name);
+      check = false;
+    }
+
+    if ($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+      showValidate(email);
+      check = false;
+    }
+
+    if ($(message).val().trim() == '') {
+      showValidate(message);
+      check = false;
+    }
+
+    return check;
+  });
+  $('.validate-form .input2').each(function () {
+    $(this).focus(function () {
+      hideValidate(this);
+    });
+  });
+
+  function showValidate(input) {
+    var thisAlert = $(input).parent();
+    $(thisAlert).addClass('alert-validate');
+  }
+
+  function hideValidate(input) {
+    var thisAlert = $(input).parent();
+    $(thisAlert).removeClass('alert-validate');
+  }
+})(jQuery);
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -51032,6 +51193,8 @@ module.exports = function(module) {
  * building robust, powerful web applications using Vue and Laravel.
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
+__webpack_require__(/*! ../contactform/js/main */ "./resources/contactform/js/main.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
