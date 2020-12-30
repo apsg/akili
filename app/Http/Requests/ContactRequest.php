@@ -17,9 +17,9 @@ class ContactRequest extends FormRequest
     public function messages()
     {
         return [
-            'name'    => 'Podaj imię',
-            'email'   => 'Podaj adres email',
-            'message' => 'Wpisz swoją wiadomość',
+            'name.*'    => 'Podaj imię',
+            'email.*'   => 'Podaj adres email',
+            'message.*' => 'Wpisz swoją wiadomość',
         ];
     }
 }

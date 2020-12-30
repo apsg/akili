@@ -40,6 +40,7 @@ const app = new Vue({
 
     methods: {
         changeType(type) {
+            console.log(type);
             this.type = type;
         }
     }

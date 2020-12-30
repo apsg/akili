@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a href="#" class="btn btn-akili" @click.prevent="onClick">
+        <a :href="scrollto" class="btn btn-akili" @click.prevent="onClick">
             <slot></slot>
         </a>
     </div>
@@ -10,12 +10,12 @@
 export default {
     name: "ScrollButton",
 
-    props: ['scrollto', 'type'],
+    props: ['scrollto', 'interest'],
 
     methods: {
         onClick() {
 
-            this.$emit('clicked-button', this.type);
+            this.$emit('clicked-button', this.interest);
 
             $('html, body').animate({
                 scrollTop: $(this.scrollto).offset().top

@@ -1964,12 +1964,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Contact",
+  props: ['type'],
   data: function data() {
     return {
       name: '',
       email: '',
       message: '',
-      type: '',
       errors: null,
       success: false
     };
@@ -2216,10 +2216,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ScrollButton",
-  props: ['scrollto', 'type'],
+  props: ['scrollto', 'interest'],
   methods: {
     onClick: function onClick() {
-      this.$emit('clicked-button', this.type);
+      this.$emit('clicked-button', this.interest);
       $('html, body').animate({
         scrollTop: $(this.scrollto).offset().top
       }, 500);
@@ -38873,7 +38873,7 @@ var render = function() {
       "a",
       {
         staticClass: "btn btn-akili",
-        attrs: { href: "#" },
+        attrs: { href: _vm.scrollto },
         on: {
           click: function($event) {
             $event.preventDefault()
@@ -51400,6 +51400,7 @@ var app = new Vue({
   },
   methods: {
     changeType: function changeType(type) {
+      console.log(type);
       this.type = type;
     }
   }

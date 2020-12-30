@@ -11,50 +11,71 @@
         </div>
     </particles>
 
-    <panel v-on:clicked-button="changeType"
-           type="Psychoterapia"
-           image="{{ asset('images/gora2.svg') }}">
+    <panel image="{{ asset('images/gora2.svg') }}">
         <div>
             <h2>Psychoterapia</h2>
             <p>Opis psychoterapia</p>
+            <scroll-button
+                v-on:clicked-button="changeType"
+                scrollto="#kontakt"
+                interest="Psychoterapia">
+                Kontakt
+            </scroll-button>
         </div>
     </panel>
 
 
-    <panel v-on:clicked-button="changeType"
-           type="Rozwojowe"
-           image="{{ asset('images/gora2.svg') }}" align="right">
+    <panel image="{{ asset('images/gora2.svg') }}"
+           align="right">
         <div>
             <h2>Diagnoza i terapia zaburzeń rozwojowych dzieci i młodzieży</h2>
             <p>Opis psychoterapia</p>
-            <scroll-button scrollto="#kontakt" type="psychoterapia">Kontakt</scroll-button>
+            <scroll-button
+                v-on:clicked-button="changeType"
+                scrollto="#kontakt"
+                interest="Diagnoza zaburzeń">
+                Kontakt
+            </scroll-button>
         </div>
     </panel>
 
     <panel v-on:clicked-button="changeType"
-           type="Możliwości poznawcze"
            image="{{ asset('images/gora2.svg') }}">
         <div>
             <h2>Diagnoza możliwości poznawczych</h2>
             <p>Opis psychoterapia</p>
+            <scroll-button
+                v-on:clicked-button="changeType"
+                scrollto="#kontakt"
+                interest="Możliwości poznawcze">
+                Kontakt
+            </scroll-button>
         </div>
     </panel>
 
-    <panel v-on:clicked-button="changeType"
-           type="Szkolenia"
-           image="{{ asset('images/gora2.svg') }}" align="right">
+    <panel image="{{ asset('images/gora2.svg') }}" align="right">
         <div>
             <h2>Szkolenia dla rodziców, specjalistów i specjalistek</h2>
             <p>Opis psychoterapia</p>
+            <scroll-button
+                v-on:clicked-button="changeType"
+                scrollto="#kontakt"
+                interest="Szkolenia">
+                Kontakt
+            </scroll-button>
         </div>
     </panel>
 
-    <panel v-on:clicked-button="changeType"
-           type="Wsparcie"
-           image="{{ asset('images/gora2.svg') }}">
+    <panel image="{{ asset('images/gora2.svg') }}">
         <div>
             <h2>Wsparcie rodziców, specjalistek i specjalistów</h2>
             <p>Opis psychoterapia</p>
+            <scroll-button
+                v-on:clicked-button="changeType"
+                scrollto="#kontakt"
+                interest="Wsparcie">
+                Kontakt
+            </scroll-button>
         </div>
     </panel>
 

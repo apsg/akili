@@ -56,12 +56,13 @@
 export default {
     name: "Contact",
 
+    props: ['type'],
+
     data() {
         return {
             name: '',
             email: '',
             message: '',
-            type: '',
             errors: null,
             success: false
         };
