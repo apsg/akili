@@ -33,6 +33,16 @@ Vue.component('scroll-button', require('./components/ScrollButton.vue').default)
 
 const app = new Vue({
     el: '#app',
+
+    data() {
+        return {type: ''}
+    },
+
+    methods: {
+        changeType(type) {
+            this.type = type;
+        }
+    }
 });
 
 $(window).on("scroll", function () {

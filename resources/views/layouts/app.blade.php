@@ -63,7 +63,9 @@
             </p>
             <p>&copy; Psychoterapia Aleksandra Magda | <a
                     href="mailto:{{ config('mail.contact') }}">{{ config('mail.contact') }}</a></p>
-            <p>Projekt i wykonanie: <a href="https://gackowski.edu.pl" target="_blank">Szymon Gackowski</a></p>
+            <p>Projekt i wykonanie: <a href="https://gackowski.edu.pl" target="_blank">Szymon Gackowski</a> |
+                Contact Form by <a href="https://colorlib.com" target="_blank">Colorlib</a> @ CC-BY-3.0
+            </p>
         </div>
     </footer>
 </div>

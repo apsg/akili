@@ -1946,8 +1946,67 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Contact",
+  data: function data() {
+    return {
+      name: '',
+      email: '',
+      message: '',
+      type: '',
+      errors: null,
+      success: false
+    };
+  },
+  methods: {
+    send: function send() {
+      var _this = this;
+
+      this.errors = null;
+      this.success = false;
+      axios.post('/contact', {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+        type: this.type
+      }).then(function (r) {
+        console.log(r);
+
+        _this.clear();
+
+        _this.success = true;
+      })["catch"](function (r) {
+        console.log(r.response);
+        _this.errors = r.response.data.errors;
+      });
+    },
+    clear: function clear() {
+      this.name = '';
+      this.email = '';
+      this.message = '';
+      this.type = '';
+      this.errors = null;
+    },
+    hasError: function hasError(name) {
+      return this.errors !== null && !!this.errors[name];
+    }
+  },
   computed: {
     mail: function mail() {
       return 'kontakt@wzmocnienie.pl';
@@ -1982,16 +2041,16 @@ __webpack_require__.r(__webpack_exports__);
     image: {
       required: true
     },
-    type: {
+    align: {
       "default": 'left'
     }
   },
   methods: {
     isLeft: function isLeft() {
-      return this.type === 'left';
+      return this.align === 'left';
     },
     isRight: function isRight() {
-      return this.type === 'right';
+      return this.align === 'right';
     }
   },
   computed: {
@@ -38503,99 +38562,214 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      { staticClass: "contact ", attrs: { id: "#contact" } },
-      [
-        _c("div", { staticClass: "container-contact2" }, [
-          _c("div", { staticClass: "wrap-contact2" }, [
-            _c("form", { staticClass: "contact2-form validate-form" }, [
-              _c("span", { staticClass: "contact2-form-title" }, [
-                _vm._v("\n\t\t\t\t\t\tSkontaktuj się ze mną\n\t\t\t\t\t")
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "wrap-input2 validate-input",
-                  attrs: { "data-validate": "Podaj imię" }
-                },
-                [
-                  _c("input", {
-                    staticClass: "input2",
-                    attrs: { type: "text", name: "name" }
-                  }),
-                  _vm._v(" "),
-                  _c("span", {
-                    staticClass: "focus-input2",
-                    attrs: { "data-placeholder": "IMIĘ" }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "wrap-input2 validate-input",
-                  attrs: { "data-validate": "Podaj adres email" }
-                },
-                [
-                  _c("input", {
-                    staticClass: "input2",
-                    attrs: { type: "text", name: "email" }
-                  }),
-                  _vm._v(" "),
-                  _c("span", {
-                    staticClass: "focus-input2",
-                    attrs: { "data-placeholder": "EMAIL" }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "wrap-input2 validate-input",
-                  attrs: { "data-validate": "Wpisz wiadomość" }
-                },
-                [
-                  _c("textarea", {
-                    staticClass: "input2",
-                    attrs: { name: "message" }
-                  }),
-                  _vm._v(" "),
-                  _c("span", {
-                    staticClass: "focus-input2",
-                    attrs: { "data-placeholder": "WIADOMOŚĆ" }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "container-contact2-form-btn" }, [
-                _c("div", { staticClass: "wrap-contact2-form-btn" }, [
-                  _c("div", { staticClass: "contact2-form-bgbtn" }),
-                  _vm._v(" "),
-                  _c("button", { staticClass: "contact2-form-btn" }, [
+  return _c("section", { staticClass: "contact", attrs: { id: "#contact" } }, [
+    _c("div", { staticClass: "container-contact2" }, [
+      _c("div", { staticClass: "wrap-contact2" }, [
+        _c(
+          "form",
+          {
+            staticClass: "contact2-form validate-form",
+            attrs: { action: "#", method: "post" }
+          },
+          [
+            _c("span", { staticClass: "contact2-form-title" }, [
+              _vm._v("\n\t\t\t\t\t\tSkontaktuj się ze mną\n\t\t\t\t\t")
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("opis")]),
+            _vm._v(" "),
+            _vm.success
+              ? _c("p", { staticClass: "alert alert-success" }, [
+                  _c("i", { staticClass: "fa fa-check-square" }),
+                  _vm._v(
+                    "\n                        Twoja wiadomość została pomyślnie wysłana\n                    "
+                  )
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "wrap-input2 validate-input",
+                attrs: { "data-validate": "Podaj imię" }
+              },
+              [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.name,
+                      expression: "name"
+                    }
+                  ],
+                  staticClass: "input2",
+                  attrs: { required: "", type: "text", name: "name" },
+                  domProps: { value: _vm.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.name = $event.target.value
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "focus-input2",
+                  attrs: { "data-placeholder": "IMIĘ" }
+                }),
+                _vm._v(" "),
+                _vm.errors && _vm.errors.name
+                  ? _c(
+                      "p",
+                      { staticClass: "alert alert-warning" },
+                      [
+                        _c("i", { staticClass: "fa fa-warning" }),
+                        _vm._v(" "),
+                        _vm._l(_vm.errors.name, function(error) {
+                          return _c("span", [_vm._v(_vm._s(error))])
+                        })
+                      ],
+                      2
+                    )
+                  : _vm._e()
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "wrap-input2 validate-input",
+                attrs: { "data-validate": "Podaj adres email" }
+              },
+              [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.email,
+                      expression: "email"
+                    }
+                  ],
+                  staticClass: "input2",
+                  attrs: { required: "", type: "email", name: "email" },
+                  domProps: { value: _vm.email },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.email = $event.target.value
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "focus-input2",
+                  attrs: { "data-placeholder": "EMAIL" }
+                }),
+                _vm._v(" "),
+                _vm.errors && _vm.errors.email
+                  ? _c(
+                      "p",
+                      { staticClass: "alert alert-warning" },
+                      [
+                        _c("i", { staticClass: "fa fa-warning" }),
+                        _vm._v(" "),
+                        _vm._l(_vm.errors.email, function(error) {
+                          return _c("span", [_vm._v(_vm._s(error))])
+                        })
+                      ],
+                      2
+                    )
+                  : _vm._e()
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "wrap-input2 validate-input",
+                attrs: { "data-validate": "Wpisz wiadomość" }
+              },
+              [
+                _c("textarea", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.message,
+                      expression: "message"
+                    }
+                  ],
+                  staticClass: "input2",
+                  attrs: { required: "", name: "message" },
+                  domProps: { value: _vm.message },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.message = $event.target.value
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "focus-input2",
+                  attrs: { "data-placeholder": "WIADOMOŚĆ" }
+                }),
+                _vm._v(" "),
+                _vm.errors && _vm.errors.message
+                  ? _c(
+                      "p",
+                      { staticClass: "alert alert-warning" },
+                      [
+                        _c("i", { staticClass: "fa fa-warning" }),
+                        _vm._v(" "),
+                        _vm._l(_vm.errors.message, function(error) {
+                          return _c("span", [_vm._v(_vm._s(error))])
+                        })
+                      ],
+                      2
+                    )
+                  : _vm._e()
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "container-contact2-form-btn" }, [
+              _c("div", { staticClass: "wrap-contact2-form-btn" }, [
+                _c("div", { staticClass: "contact2-form-bgbtn" }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "contact2-form-btn",
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.send($event)
+                      }
+                    }
+                  },
+                  [
                     _vm._v(
                       "\n                                Wyślij wiadomość\n                            "
                     )
-                  ])
-                ])
+                  ]
+                )
               ])
             ])
-          ])
-        ])
-      ]
-    )
-  }
-]
+          ]
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -51218,7 +51392,17 @@ Vue.component('scroll-button', __webpack_require__(/*! ./components/ScrollButton
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: function data() {
+    return {
+      type: ''
+    };
+  },
+  methods: {
+    changeType: function changeType(type) {
+      this.type = type;
+    }
+  }
 });
 $(window).on("scroll", function () {
   if ($(window).scrollTop()) {

@@ -16,18 +16,18 @@ export default {
         image: {
             required: true
         },
-        type: {
+        align: {
             default: 'left'
         }
     },
 
     methods: {
         isLeft() {
-            return this.type === 'left';
+            return this.align === 'left';
         },
 
         isRight() {
-            return this.type === 'right';
+            return this.align === 'right';
         }
     },
 
