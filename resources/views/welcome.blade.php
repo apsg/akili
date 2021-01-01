@@ -6,7 +6,7 @@
         <div class="d-flex justify-content-center align-items-center h-100">
             <div>
                 <h1 class="text-white text-center main-title text-light text-uppercase">{{ config('app.name') }}</h1>
-                <h3 class="text-white text-center">{{ config('app.subname') }}</h3>
+                <h3 class="text-white text-center sub-title">{{ config('app.subname') }}</h3>
             </div>
         </div>
     </particles>

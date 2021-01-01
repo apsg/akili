@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.1",
+        "mobile-device-detect": "^0.4.3",
         "vue-p5": "^0.8.3"
     }
 }

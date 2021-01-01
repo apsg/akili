@@ -3,13 +3,14 @@
         <div class="slot">
             <slot></slot>
         </div>
-        <vue-p5 class="p5" v-on="{setup, draw}"></vue-p5>
+        <vue-p5 class="p5" v-on="{setup, draw}" v-if="shouldShow"></vue-p5>
     </div>
 </template>
 <script>
 import VueP5 from 'vue-p5';
 import {Particle, StaticParticle} from "./particles";
 import {image} from "../demo_image";
+import {isMobile} from 'mobile-device-detect';
 
 export default {
     name: 'particles',
@@ -51,6 +52,10 @@ export default {
             particles: [],
             image: null
         };
+    },
+
+    mounted() {
+        console.log(isMobile);
     },
 
     methods: {
@@ -103,6 +108,10 @@ export default {
             return (this.width ? 'width: ' + this.width + 'px; ' : 'width: 100%;')
                 + (this.height ? 'height: ' + this.height + 'px;' : 'height: 100%')
                 + (this.background ? this.background : '');
+        },
+
+        shouldShow() {
+            return !isMobile;
         }
     }
 }
