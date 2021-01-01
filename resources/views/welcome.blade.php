@@ -14,7 +14,11 @@
     <panel image="{{ asset('images/gora2.svg') }}">
         <div>
             <h2>Psychoterapia</h2>
-            <p>Opis psychoterapia</p>
+            <p class="text-justify">Prowadzę psychoterapię indywidualną osób dorosłych, dzieci oraz młodzieży. Pracuję
+                w nurcie poznawczo-behawioralnym z wykorzystaniem tecchnik trzeciej fali. W procesie terapeutycznym
+                kluczowa jest
+                dla mnie relacja terapeutyczna oraz dostosowanie technik do celów i potrzeb osoby korzystającej z
+                terapii, przy uwzględnieniu wyników badań dotyczących skuteczności proponowanych metod. </p>
             <scroll-button
                 class="text-center"
                 v-on:clicked-button="changeType"
@@ -30,7 +34,11 @@
            align="right">
         <div>
             <h2>Diagnoza i terapia zaburzeń rozwojowych dzieci i młodzieży</h2>
-            <p>Opis psychoterapia</p>
+            <p class="text-justify">Diagnoza to forma krótkotrwałego kontaktu z osobą diagnozującą. Ma na celu ustalenie
+                przyczyn lub
+                mechanizmów powstawania i utrzymywania się trudności w rozwoju małego człowieka. Diagnoza zakłada
+                łącznie 4-5 spotkań: z osobami dorosłymi opiekującymi się dzieckiem, nim samym oraz analizę dostarczonej
+                dokumentacji. </p>
             <scroll-button
                 class="text-center"
                 v-on:clicked-button="changeType"
@@ -45,7 +53,9 @@
            image="{{ asset('images/gora2.svg') }}">
         <div>
             <h2>Diagnoza możliwości poznawczych</h2>
-            <p>Opis psychoterapia</p>
+            <p  class="text-justify">Diagnoza możliwości poznawczych z reguły wykonywana jest do celów orzeczniczych, jednak nie jest to
+                konieczny warunek. Badanie, w zależności od wybranej metody oraz formy psychofizycznej osoby badanej,
+                odbywa się podczas jednego lub kilku spotkań. Możliwe jest przygotowanie opinii pisemnej dotyczącej wyników badania.  </p>
             <scroll-button
                 class="text-center"
                 v-on:clicked-button="changeType"

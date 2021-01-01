@@ -1,5 +1,5 @@
 <template>
-    <div :class="classProp">
+    <div>
         <a :href="scrollto" class="btn btn-akili" @click.prevent="onClick">
             <slot></slot>
         </a>
