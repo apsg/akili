@@ -16,6 +16,7 @@
             <h2>Psychoterapia</h2>
             <p>Opis psychoterapia</p>
             <scroll-button
+                class="text-center"
                 v-on:clicked-button="changeType"
                 scrollto="#kontakt"
                 interest="Psychoterapia">
@@ -31,6 +32,7 @@
             <h2>Diagnoza i terapia zaburzeń rozwojowych dzieci i młodzieży</h2>
             <p>Opis psychoterapia</p>
             <scroll-button
+                class="text-center"
                 v-on:clicked-button="changeType"
                 scrollto="#kontakt"
                 interest="Diagnoza zaburzeń">
@@ -45,6 +47,7 @@
             <h2>Diagnoza możliwości poznawczych</h2>
             <p>Opis psychoterapia</p>
             <scroll-button
+                class="text-center"
                 v-on:clicked-button="changeType"
                 scrollto="#kontakt"
                 interest="Możliwości poznawcze">
@@ -58,6 +61,7 @@
             <h2>Szkolenia dla rodziców, specjalistów i specjalistek</h2>
             <p>Opis psychoterapia</p>
             <scroll-button
+                class="text-center"
                 v-on:clicked-button="changeType"
                 scrollto="#kontakt"
                 interest="Szkolenia">
@@ -71,6 +75,7 @@
             <h2>Wsparcie rodziców, specjalistek i specjalistów</h2>
             <p>Opis psychoterapia</p>
             <scroll-button
+                class="text-center"
                 v-on:clicked-button="changeType"
                 scrollto="#kontakt"
                 interest="Wsparcie">

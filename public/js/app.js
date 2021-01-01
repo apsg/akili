@@ -2025,6 +2025,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mobile-device-detect */ "./node_modules/mobile-device-detect/dist/index.js");
+/* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mobile_device_detect__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2035,6 +2037,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Panel",
   props: {
@@ -2044,6 +2051,14 @@ __webpack_require__.r(__webpack_exports__);
     align: {
       "default": 'left'
     }
+  },
+  data: function data() {
+    return {
+      shouldShow: false
+    };
+  },
+  mounted: function mounted() {
+    this.shouldShow = mobile_device_detect__WEBPACK_IMPORTED_MODULE_0__["isMobile"];
   },
   methods: {
     isLeft: function isLeft() {
@@ -2055,6 +2070,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     panelStyle: function panelStyle() {
+      if (mobile_device_detect__WEBPACK_IMPORTED_MODULE_0__["isMobile"]) return '';
       return 'background-image: url("' + this.image + '"); ' + 'background-position: ' + (this.isLeft() ? 'right' : 'left');
     }
   }
@@ -39389,9 +39405,18 @@ var render = function() {
     },
     [
       _c("div", { staticClass: "row" }, [
+        _vm.shouldShow
+          ? _c("div", { staticClass: "col-12 mobile-image p-5" }, [
+              _c("img", { staticClass: "w-100", attrs: { src: this.image } })
+            ])
+          : _vm._e(),
+        _vm._v(" "),
         _c(
           "div",
-          { staticClass: "col-6", class: _vm.isRight() ? "offset-6" : "" },
+          {
+            staticClass: "col-lg-6 col-md-12 col-sm-12",
+            class: _vm.isRight() && !_vm.shouldShow ? "offset-6" : ""
+          },
           [_vm._t("default")],
           2
         )
@@ -39459,7 +39484,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { class: _vm.classProp }, [
     _c(
       "a",
       {

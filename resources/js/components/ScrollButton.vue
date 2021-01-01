@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div :class="classProp">
         <a :href="scrollto" class="btn btn-akili" @click.prevent="onClick">
             <slot></slot>
         </a>
@@ -10,7 +10,7 @@
 export default {
     name: "ScrollButton",
 
-    props: ['scrollto', 'interest'],
+    props: ['scrollto', 'interest' ],
 
     methods: {
         onClick() {
