@@ -25,6 +25,10 @@ Vue.component('panel', require('./components/Panel.vue').default);
 Vue.component('contact', require('./components/Contact.vue').default);
 Vue.component('scroll-button', require('./components/ScrollButton.vue').default);
 
+import {VueTypedJs} from 'vue-typed-js';
+
+Vue.component('vue-typed-js', VueTypedJs);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

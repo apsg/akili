@@ -29,7 +29,6 @@
         </div>
     </panel>
 
-
     <panel image="{{ asset('images/gora2.svg') }}"
            align="right">
         <div>
@@ -53,9 +52,11 @@
            image="{{ asset('images/gora2.svg') }}">
         <div>
             <h2>Diagnoza możliwości poznawczych</h2>
-            <p  class="text-justify">Diagnoza możliwości poznawczych z reguły wykonywana jest do celów orzeczniczych, jednak nie jest to
+            <p class="text-justify">Diagnoza możliwości poznawczych z reguły wykonywana jest do celów orzeczniczych,
+                jednak nie jest to
                 konieczny warunek. Badanie, w zależności od wybranej metody oraz formy psychofizycznej osoby badanej,
-                odbywa się podczas jednego lub kilku spotkań. Możliwe jest przygotowanie opinii pisemnej dotyczącej wyników badania.  </p>
+                odbywa się podczas jednego lub kilku spotkań. Możliwe jest przygotowanie opinii pisemnej dotyczącej
+                wyników badania. </p>
             <scroll-button
                 class="text-center"
                 v-on:clicked-button="changeType"
