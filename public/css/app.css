@@ -17469,7 +17469,7 @@ body {
 .navbar {
   transition: 0.5s;
   color: #f8fafc;
-  background-color: #E6E1DB;
+  background-color: #FAF6EB;
 }
 
 .nav-transparent {
@@ -17508,5 +17508,9 @@ body {
   opacity: 0.85;
   color: white;
   border: 1px solid transparent;
+}
+
+.text-large {
+  font-size: 2em;
 }
 

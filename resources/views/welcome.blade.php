@@ -11,6 +11,28 @@
         </div>
     </particles>
 
+    <div class="my-5 container">
+        <div class="row">
+            <div class="col-1 text-right">
+                <span style="font-size: 50px">"</span>
+            </div>
+            <div class="col-9">
+                <p class="text-large">Osoba rozpoczynająca terapię to ktoś, kto wspina się na swoją górę tam, a terapeutka wspina się na
+                    swoją
+                    górę tutaj. Z miejsca, w którym znajduję się na swojej górze widzę różne rzeczy na Twojej górze,
+                    których
+                    Ty
+                    nie dostrzegasz, np. że istnieje jakaś alternatywna droga, którą możesz pójść albo że istnieje
+                    ryzyko
+                    zejścia lawiny.
+                </p>
+                <p class="text-right">
+                    Harris, R. Zrozumieć ACT
+                </p>
+            </div>
+        </div>
+    </div>
+
     <panel image="{{ asset('images/gora2.svg') }}">
         <div>
             <h2>Psychoterapia</h2>
