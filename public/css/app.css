@@ -17514,3 +17514,19 @@ body {
   font-size: 2em;
 }
 
+.navbar-background {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(45deg, #3e3b84, #5b1c84);
+  opacity: 0.85;
+  height: 55px;
+  width: 100%;
+}
+
+.bullet-list {
+  list-style: inside;
+}
+
+.bullet-list li {
+  list-style-type: circle;
+}
+

@@ -18,6 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/o-mnie', function () {
+    return view('about');
+});
+
+Route::get('/wspolpraca', function () {
+    return view('cooperation');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

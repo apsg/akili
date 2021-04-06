@@ -17,7 +17,8 @@
                 <span style="font-size: 50px">"</span>
             </div>
             <div class="col-9">
-                <p class="text-large">Osoba rozpoczynająca terapię to ktoś, kto wspina się na swoją górę tam, a terapeutka wspina się na
+                <p class="text-large">Osoba rozpoczynająca terapię to ktoś, kto wspina się na swoją górę tam, a
+                    terapeutka wspina się na
                     swoją
                     górę tutaj. Z miejsca, w którym znajduję się na swojej górze widzę różne rzeczy na Twojej górze,
                     których
@@ -36,11 +37,11 @@
     <panel image="{{ asset('images/gora2.svg') }}">
         <div>
             <h2>Psychoterapia</h2>
-            <p class="text-justify">Prowadzę psychoterapię indywidualną osób dorosłych, dzieci oraz młodzieży. Pracuję
-                w nurcie poznawczo-behawioralnym z wykorzystaniem tecchnik trzeciej fali. W procesie terapeutycznym
-                kluczowa jest
-                dla mnie relacja terapeutyczna oraz dostosowanie technik do celów i potrzeb osoby korzystającej z
-                terapii, przy uwzględnieniu wyników badań dotyczących skuteczności proponowanych metod. </p>
+            <p class="text-justify">Prowadzę psychoterapię indywidualną osób dorosłych, dzieci oraz młodzieży.
+                Pracuję w nurcie poznawczo-behawioralnym z wykorzystaniem technik trzeciej fali.
+                W procesie terapeutycznym kluczowa jest dla mnie relacja terapeutyczna oraz dostosowanie technik do
+                celów i potrzeb osoby korzystającej z terapii, przy uwzględnieniu wyników badań dotyczących skuteczności
+                proponowanych metod. </p>
             <scroll-button
                 class="text-center"
                 v-on:clicked-button="changeType"
@@ -55,11 +56,12 @@
            align="right">
         <div>
             <h2>Diagnoza i terapia zaburzeń rozwojowych dzieci i młodzieży</h2>
-            <p class="text-justify">Diagnoza to forma krótkotrwałego kontaktu z osobą diagnozującą. Ma na celu ustalenie
-                przyczyn lub
+            <p class="text-justify">Diagnoza to forma krótkotrwałego kontaktu. Ma na celu ustalenie przyczyn lub
                 mechanizmów powstawania i utrzymywania się trudności w rozwoju małego człowieka. Diagnoza zakłada
-                łącznie 4-5 spotkań: z osobami dorosłymi opiekującymi się dzieckiem, nim samym oraz analizę dostarczonej
-                dokumentacji. </p>
+                łącznie 4-5 spotkań: z osobami dorosłymi opiekującymi się dzieckiem celem zebrania wywiadu rozwojowego
+                oraz by podsumować proces diagnostyczny, 2 spotkania z dzieckiem oraz analizę dostarczonej dokumentacji,
+                filmów. Czasem dodatkowo przeprowadzana jest obserwacja dziecka w środowisku rówieśniczym, np. w szkole.
+                Na prośbę rodziców przygotowywane są także opinia i zalecenia na piśmie. </p>
             <scroll-button
                 class="text-center"
                 v-on:clicked-button="changeType"
@@ -74,11 +76,12 @@
            image="{{ asset('images/gora2.svg') }}">
         <div>
             <h2>Diagnoza możliwości poznawczych</h2>
-            <p class="text-justify">Diagnoza możliwości poznawczych z reguły wykonywana jest do celów orzeczniczych,
-                jednak nie jest to
+            <p class="text-justify">
+                Diagnoza możliwości poznawczych z reguły wykonywana jest do celów orzeczniczych, jednak nie jest to
                 konieczny warunek. Badanie, w zależności od wybranej metody oraz formy psychofizycznej osoby badanej,
                 odbywa się podczas jednego lub kilku spotkań. Możliwe jest przygotowanie opinii pisemnej dotyczącej
-                wyników badania. </p>
+                wyników badania oraz opis zaleceń, gdy to konieczne.
+            </p>
             <scroll-button
                 class="text-center"
                 v-on:clicked-button="changeType"
@@ -92,7 +95,12 @@
     <panel image="{{ asset('images/gora2.svg') }}" align="right">
         <div>
             <h2>Szkolenia dla rodziców, specjalistów i specjalistek</h2>
-            <p>Opis psychoterapia</p>
+            <p>
+                Szkolenia przygotowywane są z uwagą na oczekiwania i potrzeby osób biorących w nich udział. Mają one
+                charakter warsztatowy lub wykładowy. Forma ustalana jest na początku współpracy. Dotychczas
+                przygotowywane szkolenia dotyczyła zaburzeń rozwojowych i neurorozwojowych, strategii pracy z dziećmi,
+                których rozwój przebiega w sposób atypowy, profilaktyki zdrowia psychicznego, komunikacji.
+            </p>
             <scroll-button
                 class="text-center"
                 v-on:clicked-button="changeType"
@@ -106,7 +114,10 @@
     <panel image="{{ asset('images/gora2.svg') }}">
         <div>
             <h2>Wsparcie rodziców, specjalistek i specjalistów</h2>
-            <p>Opis psychoterapia</p>
+            <p>
+                To forma krótkotrwałego kontaktu. Ma na celu ustalenie źródła doświadczanych trudności, wypracowanie
+                strategii, które będą mogły pomóc w osiągnięciu oczekiwanego celu.
+            </p>
             <scroll-button
                 class="text-center"
                 v-on:clicked-button="changeType"

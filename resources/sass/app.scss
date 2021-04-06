@@ -33,7 +33,7 @@ body {
     font-weight: 300;
 }
 
-.sub-title{
+.sub-title {
     font-size: 5vw;
     font-weight: 300;
 }
@@ -76,6 +76,20 @@ body {
     }
 }
 
-.text-large{
+.text-large {
     font-size: 2em;
+}
+
+.navbar-background {
+    @include gradient;
+    height: 55px;
+    width: 100%;
+}
+
+.bullet-list {
+    list-style: inside;
+    
+    li {
+        list-style-type: circle;
+    }
 }
