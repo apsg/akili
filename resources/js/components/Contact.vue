@@ -112,7 +112,7 @@ export default {
 
 <style lang="scss" scoped>
 .contact {
-    background-image: url("/images/contact-bg.jpg");
+    background-image: url("/images/contact-bg.webp");
     background-position: center center;
     background-size: cover;
 }

@@ -88,8 +88,12 @@ body {
 
 .bullet-list {
     list-style: inside;
-    
+
     li {
         list-style-type: circle;
     }
+}
+
+p, li {
+    color: #666666;
 }

@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <panel image="{{ asset('images/gora2.svg') }}">
+    <panel image="{{ asset('images/clouds.svg') }}">
         <div>
             <h2>Psychoterapia</h2>
             <p class="text-justify">Prowadzę psychoterapię indywidualną osób dorosłych, dzieci oraz młodzieży.
@@ -52,8 +52,7 @@
         </div>
     </panel>
 
-    <panel image="{{ asset('images/gora2.svg') }}"
-           align="right">
+    <panel image="{{ asset('images/hands.svg') }}">
         <div>
             <h2>Diagnoza i terapia zaburzeń rozwojowych dzieci i młodzieży</h2>
             <p class="text-justify">Diagnoza to forma krótkotrwałego kontaktu. Ma na celu ustalenie przyczyn lub
@@ -73,7 +72,7 @@
     </panel>
 
     <panel v-on:clicked-button="changeType"
-           image="{{ asset('images/gora2.svg') }}">
+           image="{{ asset('images/diagnosis.svg') }}">
         <div>
             <h2>Diagnoza możliwości poznawczych</h2>
             <p class="text-justify">
@@ -111,7 +110,7 @@
         </div>
     </panel>
 
-    <panel image="{{ asset('images/gora2.svg') }}">
+    <panel image="">
         <div>
             <h2>Wsparcie rodziców, specjalistek i specjalistów</h2>
             <p>

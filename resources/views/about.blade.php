@@ -36,7 +36,6 @@
 
 
                 <h2>Ważniejsze kursy i szkolenia</h2>
-
                 <ul class="bullet-list">
                     <li>Praktyk Biofeedback HRV – licencja Biofeedback Labs USA</li>
                     <li>Praca z rodzicami– NSPPP „Rozwijanka”</li>
@@ -51,19 +50,19 @@
                     <li>Problemy wieku rozwojowego w ujęciu poznawczo-behawioralnym – NOND Mensana,</li>
                     <li>Podstawowe zagadnienia terapii i edukacji dzieci z autyzmem - Fundacja SYNAPSIS,</li>
                     <li>Karty Oceny Rozwoju Psychoruchowego – narzędzie diagnozy rozwoju dziecka w wieku 1 m.ż. - 9 r.ż.
-                        -
+                        - KOMLOGO,
                     </li>
-                    KOMLOGO,
-                    <li>Diagnoza małych dzieci w kierunku zaburzeń ze spektrum autyzmu - Fundacja SYNAPSIS, Program</li>
-                    Wczesnego
-                    Wykrywania Autyzmu BadaBada,
+                    <li>Diagnoza małych dzieci w kierunku zaburzeń ze spektrum autyzmu - Fundacja SYNAPSIS, Program
+                        Wczesnego Wykrywania Autyzmu BadaBada,
+                    </li>
                     <li>Stosowana Analiza Zachowania - UJ,</li>
-                    <li>Drogi i Mosty – najlepsze strategie uczenia umiejętności społecznych osób z  ASD – Fundacja</li>
-                    SYNAPSIS,
+                    <li>Drogi i Mosty – najlepsze strategie uczenia umiejętności społecznych osób z  ASD – Fundacja
+                        SYNAPSIS,
+                    </li>
                     <li>Terapia ręki. Poziom I. - Acentrum Szkolenia,</li>
                     <li>Przemoc seksualna wobec dzieci – podstawy diagnozowania psychologicznego - Centrum Psychologii
+                        Sądowej,
                     </li>
-                    Sądowej,
                     <li>VB-MAPP: ocena umiejętności i planowanie terapii - SCOLARIS,</li>
                     <li>Dam radę - szkolenie z zakresu metody KIDS' SKILLS - Esperi,</li>
                     <li>Rozwijanie Kluczowych Umiejętności Komunikacyjnych - Pyramid Educational Consultants of
