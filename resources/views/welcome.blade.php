@@ -91,7 +91,7 @@
         </div>
     </panel>
 
-    <panel image="{{ asset('images/gora2.svg') }}" align="right">
+    <panel image="{{ asset('images/support.svg') }}" align="right">
         <div>
             <h2>Szkolenia dla rodziców, specjalistów i specjalistek</h2>
             <p>
@@ -110,7 +110,7 @@
         </div>
     </panel>
 
-    <panel image="">
+    <panel image="{{ asset('images/support-hands.svg') }}">
         <div>
             <h2>Wsparcie rodziców, specjalistek i specjalistów</h2>
             <p>
