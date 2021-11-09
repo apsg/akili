@@ -6610,7 +6610,7 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #212529;
+  color: #212121;
   text-align: left;
   background-color: #f8fafc;
 }
@@ -8311,7 +8311,7 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #212121;
 }
 
 .table th,
@@ -8361,7 +8361,7 @@ pre code {
 }
 
 .table-hover tbody tr:hover {
-  color: #212529;
+  color: #212121;
   background-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -8765,7 +8765,7 @@ select.form-control:focus::-ms-value {
   margin-bottom: 0;
   font-size: 0.9rem;
   line-height: 1.6;
-  color: #212529;
+  color: #212121;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -9159,7 +9159,7 @@ textarea.form-control.is-invalid {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: #212121;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -9182,7 +9182,7 @@ textarea.form-control.is-invalid {
 }
 
 .btn:hover {
-  color: #212529;
+  color: #212121;
   text-decoration: none;
 }
 
@@ -9943,7 +9943,7 @@ input[type=button].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.9rem;
-  color: #212529;
+  color: #212121;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -12275,7 +12275,7 @@ a.badge-dark.focus {
 }
 
 .list-group-item-action:active {
-  color: #212529;
+  color: #212121;
   background-color: #e9ecef;
 }
 
@@ -13208,7 +13208,7 @@ a.close.disabled {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #212529;
+  color: #212121;
 }
 
 .carousel {
@@ -17301,7 +17301,7 @@ a.text-dark:focus {
 }
 
 .text-body {
-  color: #212529 !important;
+  color: #212121 !important;
 }
 
 .text-muted {
@@ -17528,5 +17528,10 @@ body {
 
 .bullet-list li {
   list-style-type: circle;
+}
+
+p,
+li {
+  color: #666666;
 }
 

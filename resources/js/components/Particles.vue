@@ -121,7 +121,7 @@ export default {
     width: 100%;
     height: 100%;
     position: relative;
-    background-image: url("/images/bg.jpg");
+    background-image: url("/images/bg.webp");
     background-position: center center;
     background-size: cover;
 }
