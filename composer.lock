@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "964211f80179d26d0b379a211147c083",
+    "content-hash": "4cf55ce13c5d65f7d317ecf3884ea857",
     "packages": [
         {
             "name": "apsg/zenboxer",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apsg/zenboxer.git",
-                "reference": "e10a4a65986b8d499a6ecd0113f77d4b83b6a1ef"
+                "reference": "3af8746de4fe074eb1c5ab05cb39445122792e88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apsg/zenboxer/zipball/e10a4a65986b8d499a6ecd0113f77d4b83b6a1ef",
-                "reference": "e10a4a65986b8d499a6ecd0113f77d4b83b6a1ef",
+                "url": "https://api.github.com/repos/apsg/zenboxer/zipball/3af8746de4fe074eb1c5ab05cb39445122792e88",
+                "reference": "3af8746de4fe074eb1c5ab05cb39445122792e88",
                 "shasum": ""
             },
             "require": {
@@ -32,10 +32,7 @@
                 "laravel": {
                     "providers": [
                         "Apsg\\Zenboxer\\ZenboxerServiceProvider"
-                    ],
-                    "aliases": {
-                        "Zenboxer": "Apsg\\Zenboxer\\Facades\\Zenboxer"
-                    }
+                    ]
                 }
             },
             "autoload": {
@@ -45,14 +42,16 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "license"
+                "MIT"
             ],
             "authors": [
                 {
-                    "name": "author name"
+                    "name": "Szymon Gackowski",
+                    "email": "szymon@gackowski.edu.pl",
+                    "homepage": "https://gackowski.edu.pl"
                 }
             ],
-            "description": ":package_description",
+            "description": "Zenbox issues fixer",
             "homepage": "https://github.com/apsg/zenboxer",
             "keywords": [
                 "Zenboxer",
@@ -60,9 +59,9 @@
             ],
             "support": {
                 "issues": "https://github.com/apsg/zenboxer/issues",
-                "source": "https://github.com/apsg/zenboxer/tree/1.0.0"
+                "source": "https://github.com/apsg/zenboxer/tree/1.1.0"
             },
-            "time": "2020-12-31T13:43:16+00:00"
+            "time": "2021-11-09T21:08:16+00:00"
         },
         {
             "name": "asm89/stack-cors",
