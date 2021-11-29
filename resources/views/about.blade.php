@@ -5,7 +5,11 @@
     </div>
     <div class="container">
         <div class="row py-3">
-            <div class="col-12">
+            <div class="col-4 text-center">
+                <img class="w-100" src="{{ asset('images/ola.webp') }}"/>
+            </div>
+            <div class="col-8">
+
                 <h2>O mnie</h2>
                 <p>Jestem psycholożką i psychoterapeutką poznawczo-behawioralną w trakcie certyfikacji.
                     Ukończyłam studia magisterskie na Uniwersytecie Jagiellońskim ze specjalizacją psychologia kliniczna
@@ -33,8 +37,9 @@
                     Doświadczenie zawodowe zdobywałam także w ramach staży i wolontariatów, między innymi w Szpitalu
                     Uniwersyteckim w Krakowie.
                 </p>
+            </div>
 
-
+            <div class="col-12 mt-5">
                 <h2>Ważniejsze kursy i szkolenia</h2>
                 <ul class="bullet-list">
                     <li>Praktyk Biofeedback HRV – licencja Biofeedback Labs USA</li>

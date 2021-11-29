@@ -97,3 +97,13 @@ body {
 p, li {
     color: #666666;
 }
+
+.contact {
+    background-image: url("/images/contact-bg.webp");
+    background-position: center center;
+    background-size: cover;
+}
+
+.gradient-overlay {
+    background: linear-gradient(45deg, rgba(62, 59, 132, .7), rgba(91, 28, 132, .7));
+}

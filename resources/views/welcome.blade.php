@@ -34,6 +34,15 @@
         </div>
     </div>
 
+    <section class="contact">
+        <div class="w-100 gradient-overlay">
+            <div class="container p-5 text-center">
+                <h2 class="text-white">Prowadzę diagnozę autyzmu narzedziem ADOS-2</h2>
+                <a href="https://autyzmdiagnoza.pl" class="btn btn-secondary btn-lg" target="_blank">Diagnoza ADOS-2</a>
+            </div>
+        </div>
+    </section>
+
     <panel image="{{ asset('images/clouds.svg') }}">
         <div>
             <h2>Psychoterapia</h2>

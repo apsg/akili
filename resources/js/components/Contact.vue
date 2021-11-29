@@ -111,9 +111,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.contact {
-    background-image: url("/images/contact-bg.webp");
-    background-position: center center;
-    background-size: cover;
-}
+
 </style>

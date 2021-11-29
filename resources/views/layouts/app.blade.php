@@ -45,6 +45,9 @@
                         <a class="nav-link" href="{{ url('wspolpraca') }}">Współpraca</a>
                     </li>
                     <li class="nav-item px-2">
+                        <a class="nav-link" href="https://autyzmdiagnoza.pl">Diagnoza ADOS-2</a>
+                    </li>
+                    <li class="nav-item px-2">
                         <a class="nav-link" href="{{ url('/') }}/#kontakt">{{ __("Kontakt") }}</a>
                     </li>
                 </ul>
