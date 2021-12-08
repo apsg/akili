@@ -22,7 +22,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5PB8HLEGJ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-D5PB8HLEGJ');
@@ -31,7 +35,7 @@
 <body>
 
 <header>
-    <div class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top nav-transparent" id="nav">
+    <div class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top nav-transparent nav-gradient-mobile" id="nav">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{ config('app.name') }}

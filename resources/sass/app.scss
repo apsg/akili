@@ -107,3 +107,9 @@ p, li {
 .gradient-overlay {
     background: linear-gradient(45deg, rgba(62, 59, 132, .7), rgba(91, 28, 132, .7));
 }
+
+@media (max-width: 786px) {
+    .nav-gradient-mobile {
+        @include gradient-full;
+    }
+}

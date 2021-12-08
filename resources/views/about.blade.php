@@ -5,12 +5,12 @@
     </div>
     <div class="container">
         <div class="row py-3">
-            <div class="col-4 text-center">
+            <div class="col-md-4 col-sm-12 text-center">
                 <img class="w-100" src="{{ asset('images/ola.webp') }}"/>
             </div>
-            <div class="col-8">
+            <div class="col-md-8 col-sm-12">
 
-                <h2>O mnie</h2>
+                <h2 class="mt-sm-3">O mnie</h2>
                 <p>Jestem psycholożką i psychoterapeutką poznawczo-behawioralną w trakcie certyfikacji.
                     Ukończyłam studia magisterskie na Uniwersytecie Jagiellońskim ze specjalizacją psychologia kliniczna
                     dziecka, posiadam uprawienia pedagogiczne. Obecnie realizuję czteroletnie szkolenie z zakresu

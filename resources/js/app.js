@@ -54,11 +54,13 @@ $(window).on("scroll", function () {
     if ($(window).scrollTop()) {
         $('#nav').removeClass('nav-transparent')
             .removeClass('navbar-dark')
+            .removeClass('nav-gradient-mobile')
             .addClass('navbar-light');
     } else {
         $('#nav').addClass('nav-transparent')
             .removeClass('navbar-light')
-            .addClass('navbar-dark');
+            .addClass('navbar-dark')
+            .addClass('nav-gradient-mobile');
     }
 });
 
