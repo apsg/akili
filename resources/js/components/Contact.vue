@@ -7,8 +7,6 @@
 						Skontaktuj się ze mną
 					</span>
 
-                    <p>opis</p>
-
                     <p v-if="success" class="alert alert-success">
                         <i class="fa fa-check-square"></i>
                         Twoja wiadomość została pomyślnie wysłana
@@ -36,6 +34,19 @@
                         <p class="alert alert-warning" v-if="errors && errors.message">
                             <i class="fa fa-warning"></i> <span v-for="error in errors.message">{{ error }}</span>
                         </p>
+                    </div>
+
+                    <div class="col-md-12 padding-30">
+                        <p>Przesyłając wiadomość przez formularz kontaktowy wyrażasz zgodę na przetwarzanie
+                            wskazanych danych osobowych przez Aleksandrę Magda prowadzącą działalność gospodarczą
+                            pod firmą Wzmocnienie Aleksandra Magda. Więcej na temat przetwarzania danych osobowych
+                            przeczytasz w <a target="_blank" href="https://wzmocnienie.pl/files/polityka.pdf">Polityce prywatności</a>.
+                        </p>
+                        <label>
+                            <input type="checkbox" class="" required name="accept"> Akceptuję
+                            <a href="https://wzmocnienie.pl/files/regulamin.pdf" target="_blank">Regulamin</a> oraz
+                            <a target="_blank" href="https://wzmocnienie.pl/files/polityka.pdf">Politykę prywatności</a>
+                        </label>
                     </div>
 
                     <div class="container-contact2-form-btn">
