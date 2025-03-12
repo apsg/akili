@@ -4,7 +4,7 @@
             <div class="wrap-contact2">
                 <form class="contact2-form validate-form" action="#" method="post">
 					<span class="contact2-form-title">
-						Skontaktuj się ze mną
+						Skontaktuj się z nami
 					</span>
 
                     <p v-if="success" class="alert alert-success">

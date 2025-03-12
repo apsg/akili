@@ -37,7 +37,7 @@
     <section class="contact">
         <div class="w-100 gradient-overlay">
             <div class="container p-5 text-center">
-                <h2 class="text-white">Prowadzę diagnozę autyzmu narzedziem ADOS-2</h2>
+                <h2 class="text-white">Diagnoza autyzmu z użyciem ADOS-2</h2>
                 <a href="https://autyzmdiagnoza.pl" class="btn btn-secondary btn-lg" target="_blank">Diagnoza ADOS-2</a>
             </div>
         </div>
@@ -46,8 +46,8 @@
     <panel image="{{ asset('images/clouds.svg') }}">
         <div>
             <h2>Psychoterapia</h2>
-            <p class="text-justify">Prowadzę psychoterapię indywidualną osób dorosłych, dzieci oraz młodzieży.
-                Pracuję w nurcie poznawczo-behawioralnym z wykorzystaniem technik trzeciej fali.
+            <p class="text-justify">Prowadzimy psychoterapię indywidualną osób dorosłych, dzieci oraz młodzieży.
+                Pracujemy w nurcie poznawczo-behawioralnym z wykorzystaniem technik trzeciej fali.
                 W procesie terapeutycznym kluczowa jest dla mnie relacja terapeutyczna oraz dostosowanie technik do
                 celów i potrzeb osoby korzystającej z terapii, przy uwzględnieniu wyników badań dotyczących skuteczności
                 proponowanych metod. </p>
@@ -104,9 +104,9 @@
         <div>
             <h2>Szkolenia dla rodziców, specjalistów i specjalistek</h2>
             <p>
-                Szkolenia przygotowywane są z uwagą na oczekiwania i potrzeby osób biorących w nich udział. Mają one
+                Szkolenia przygotowywane są w odpowiedzi na oczekiwania i potrzeby osób biorących w nich udział. Mają one
                 charakter warsztatowy lub wykładowy. Forma ustalana jest na początku współpracy. Dotychczas
-                przygotowywane szkolenia dotyczyła zaburzeń rozwojowych i neurorozwojowych, strategii pracy z dziećmi,
+                przygotowywane szkolenia dotyczyły zaburzeń rozwojowych i neurorozwojowych, strategii pracy z dziećmi,
                 których rozwój przebiega w sposób atypowy, profilaktyki zdrowia psychicznego, komunikacji.
             </p>
             <scroll-button
