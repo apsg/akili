@@ -44,7 +44,7 @@ jobs:
             cd ${{ secrets.TARGET }}
             ln -s public public_html
             ln -s public public_html
-            composer install
+            php80 composer.phar install
             php80 artisan migrate --force
             php80 artisan cache:clear
             php80 artisan view:cache
