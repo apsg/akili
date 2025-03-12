@@ -18,12 +18,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/o-mnie', function () {
+Route::get('/o-nas', function () {
     return view('about');
 });
 
 Route::get('/wspolpraca', function () {
     return view('cooperation');
+});
+
+Route::get('/conaswyroznia', function () {
+    return view('conaswyroznia');
+});
+
+Route::get('/uslugi', function () {
+    return view('uslugi');
 });
 
 Auth::routes();

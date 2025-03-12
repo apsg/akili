@@ -52,10 +52,13 @@
                         <a class="nav-link" href="{{ url('/') }}">{{ __("Strona główna") }} <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="{{ url('o-mnie') }}">O mnie</a>
+                        <a class="nav-link" href="{{ url('o-nas') }}">O nas</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="{{ url('wspolpraca') }}">Współpraca</a>
+                        <a class="nav-link" href="{{ url('conaswyroznia') }}">Co nas wyróżnia</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="{{ url('uslugi') }}">Usługi</a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" href="https://autyzmdiagnoza.pl">Diagnoza ADOS-2</a>

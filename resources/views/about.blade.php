@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-8 col-sm-12">
 
-                <h2 class="mt-sm-3">O mnie</h2>
+                <h2 class="mt-sm-3">O nas</h2>
                 <p>Jestem psycholożką i certyfikowaną psychoterapeutką poznawczo-behawioralna (PTTPB nr 1318),
                     członkinią Polskiego Towarzystwa Terapii Poznawczej i Behawioralnej.</p>
 
@@ -44,50 +44,6 @@
                     Karmię kota. Bardzo chciałabym zobaczyć pingwiny w naturze, na ich części Ziemi.</p>
             </div>
 
-            {{--            <div class="col-12 mt-5">--}}
-            {{--                <h2>Ważniejsze kursy i szkolenia</h2>--}}
-            {{--                <ul class="bullet-list">--}}
-            {{--                    <li>Praktyk Biofeedback HRV – licencja Biofeedback Labs USA</li>--}}
-            {{--                    <li>Praca z rodzicami– NSPPP „Rozwijanka”</li>--}}
-            {{--                    <li>Dziewczyny w spektrum – Artonomia</li>--}}
-            {{--                    <li>Uprawnienia diagnostyczne Skali inteligencji Stanford-Binet 5 – PTPiP w Gdański</li>--}}
-            {{--                    <li>Zastosowanie metod standardowych w rozwiązywaniu problemów diagnostycznych – PTP Oddział--}}
-            {{--                        Krakowski--}}
-            {{--                    </li>--}}
-            {{--                    <li>Autyzm bez lęku – Fundacja SYNAPSIS</li>--}}
-            {{--                    <li>Szkolenie Psychoterapii Dzieci i Młodzieży w ujęciu poznawczo - behawioralnym - NOND Mensana,--}}
-            {{--                    </li>--}}
-            {{--                    <li>Problemy wieku rozwojowego w ujęciu poznawczo-behawioralnym – NOND Mensana,</li>--}}
-            {{--                    <li>Podstawowe zagadnienia terapii i edukacji dzieci z autyzmem - Fundacja SYNAPSIS,</li>--}}
-            {{--                    <li>Karty Oceny Rozwoju Psychoruchowego – narzędzie diagnozy rozwoju dziecka w wieku 1 m.ż. - 9 r.ż.--}}
-            {{--                        - KOMLOGO,--}}
-            {{--                    </li>--}}
-            {{--                    <li>Diagnoza małych dzieci w kierunku zaburzeń ze spektrum autyzmu - Fundacja SYNAPSIS, Program--}}
-            {{--                        Wczesnego Wykrywania Autyzmu BadaBada,--}}
-            {{--                    </li>--}}
-            {{--                    <li>Stosowana Analiza Zachowania - UJ,</li>--}}
-            {{--                    <li>Drogi i Mosty – najlepsze strategie uczenia umiejętności społecznych osób z  ASD – Fundacja--}}
-            {{--                        SYNAPSIS,--}}
-            {{--                    </li>--}}
-            {{--                    <li>Terapia ręki. Poziom I. - Acentrum Szkolenia,</li>--}}
-            {{--                    <li>Przemoc seksualna wobec dzieci – podstawy diagnozowania psychologicznego - Centrum Psychologii--}}
-            {{--                        Sądowej,--}}
-            {{--                    </li>--}}
-            {{--                    <li>VB-MAPP: ocena umiejętności i planowanie terapii - SCOLARIS,</li>--}}
-            {{--                    <li>Dam radę - szkolenie z zakresu metody KIDS' SKILLS - Esperi,</li>--}}
-            {{--                    <li>Rozwijanie Kluczowych Umiejętności Komunikacyjnych - Pyramid Educational Consultants of--}}
-            {{--                        Poland,--}}
-            {{--                    </li>--}}
-            {{--                    <li>Picture Exchange Communication System – poziom 1 –  Pyramid Educational Consultants of Poland.--}}
-            {{--                    </li>--}}
-            {{--                </ul>--}}
-            {{--                <p>--}}
-            {{--                    Poza pracą uwielbiam wędrówki po górach o każdej porze roku, spanie w hamaku, jazdę na--}}
-            {{--                    rowerze, wspinaczkę, jogę i czytanie reportaży. Powoli odkrywam, że kwiaty doniczkowe mogą żyć--}}
-            {{--                    dłużej--}}
-            {{--                    niż dwa tygodnie, lubię koty i bardzo chciałabym spotkać pingwiny na ich części globu.--}}
-            {{--                </p>--}}
-            {{--            </div>--}}
         </div>
     </div>
 @endsection

@@ -3,7 +3,7 @@
 return [
 
     'name' => env('APP_NAME', 'Wzmocnienie'),
-    'subname' => env('APP_SUBNAME', 'Psycholożka Aleksandra Magda'),
+    'subname' => env('APP_SUBNAME', 'Diagnoza. Psychoterapia. Wsparcie.'),
 
     /*
     |--------------------------------------------------------------------------
