@@ -44,31 +44,39 @@
                     Karmię kota. Bardzo chciałabym zobaczyć pingwiny w naturze, na ich części Ziemi.</p>
             </div>
         </div>
-        <div class="col-md-8 col-sm-12">
-            <h2 class="mt-sm-3">Oliwia Markowska</h2>
-            <p>Jestem psycholożką i psychoterapeutką poznawczo – behawioralną (certyfikat nr PTTPB 1319). Należę do
-                Polskiego Towarzystwa Psychoterapii Poznawczej i Behawioralnej. Ukończyłam studia psychologiczne na
-                Uniwersytecie Jagiellońskim oraz czteroletnią szkołę psychoterapii. Prowadzę psychoterapię indywidualną
-                młodzieży i osób dorosłych oraz diagnozy.
-            </p>
-            <p>
-                Pracę zawodową rozpoczynałam od codziennego wspierania dzieci z zaburzeniami neurorozwojowymi, co dało
-                mi możliwość zrozumienia codziennego funkcjonowania dzieci z trudnościami i ich rodzin. Następnie
-                pracowałam w poradni psychologiczno – pedagogicznej, w szpitalu psychiatrycznym z osobami dorosłymi oraz
-                w środowiskowym centrum zdrowia psychicznego dla dzieci i młodzieży. Obecnie prowadzę terapię
-                indywidualną w gabinecie. Swoją pracę poddaję regularnej superwizji.
-            </p>
-            <p>
-                Ważną częścią mojej pracy jest diagnoza i wspieranie osób z ADHD i spektrum autyzmu. Ukończyłam w tym
-                obszarze liczne szkolenia, w tym dotyczące diagnozy kobiet.
-            </p>
-            <p>
-                W czasie wolnym dużo jeżdżę na rowerze, bardzo lubię też chodzić po górach. Kiedy pada deszcz – czytam,
-                oglądam filmy i szydełkuję.
-            </p>
-        </div>
-        <div class="col-md-4 col-sm-12 text-center">
-            <img class="w-100" src="{{ asset('images/oliwia_400.webp') }}"/>
+
+        <div class="row py-3">
+            <div class="col-md-8 col-sm-12">
+                <h2 class="mt-sm-3">Oliwia Markowska</h2>
+                <p>Jestem psycholożką i psychoterapeutką poznawczo – behawioralną (certyfikat nr PTTPB 1319). Należę do
+                    Polskiego Towarzystwa Psychoterapii Poznawczej i Behawioralnej. Ukończyłam studia psychologiczne na
+                    Uniwersytecie Jagiellońskim oraz czteroletnią szkołę psychoterapii. Prowadzę psychoterapię
+                    indywidualną
+                    młodzieży i osób dorosłych oraz diagnozy.
+                </p>
+                <p>
+                    Pracę zawodową rozpoczynałam od codziennego wspierania dzieci z zaburzeniami neurorozwojowymi, co
+                    dało
+                    mi możliwość zrozumienia codziennego funkcjonowania dzieci z trudnościami i ich rodzin. Następnie
+                    pracowałam w poradni psychologiczno – pedagogicznej, w szpitalu psychiatrycznym z osobami dorosłymi
+                    oraz
+                    w środowiskowym centrum zdrowia psychicznego dla dzieci i młodzieży. Obecnie prowadzę terapię
+                    indywidualną w gabinecie. Swoją pracę poddaję regularnej superwizji.
+                </p>
+                <p>
+                    Ważną częścią mojej pracy jest diagnoza i wspieranie osób z ADHD i spektrum autyzmu. Ukończyłam w
+                    tym
+                    obszarze liczne szkolenia, w tym dotyczące diagnozy kobiet.
+                </p>
+                <p>
+                    W czasie wolnym dużo jeżdżę na rowerze, bardzo lubię też chodzić po górach. Kiedy pada deszcz –
+                    czytam,
+                    oglądam filmy i szydełkuję.
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+                <img class="w-100" src="{{ asset('images/oliwia_400.webp') }}"/>
+            </div>
         </div>
     </div>
 @endsection
