@@ -68,7 +68,7 @@
             </p>
         </div>
         <div class="col-md-4 col-sm-12 text-center">
-            <img class="w-100" src="{{ asset('images/oliwia-400.webp') }}"/>
+            <img class="w-100" src="{{ asset('images/oliwia_400.webp') }}"/>
         </div>
     </div>
 @endsection
