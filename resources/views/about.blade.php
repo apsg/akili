@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-8 col-sm-12">
 
-                <h2 class="mt-sm-3">O nas</h2>
+                <h2 class="mt-sm-3">Aleksandra Magda</h2>
                 <p>Jestem psycholożką i certyfikowaną psychoterapeutką poznawczo-behawioralna (PTTPB nr 1318),
                     członkinią Polskiego Towarzystwa Terapii Poznawczej i Behawioralnej.</p>
 
@@ -43,7 +43,32 @@
                 <p>Prywatnie uwielbiam wędrówki po górach i inne formy odpoczynku w ruchu. Czytam reportaże.
                     Karmię kota. Bardzo chciałabym zobaczyć pingwiny w naturze, na ich części Ziemi.</p>
             </div>
-
+        </div>
+        <div class="col-md-8 col-sm-12">
+            <h2 class="mt-sm-3">Oliwia Markowska</h2>
+            <p>Jestem psycholożką i psychoterapeutką poznawczo – behawioralną (certyfikat nr PTTPB 1319). Należę do
+                Polskiego Towarzystwa Psychoterapii Poznawczej i Behawioralnej. Ukończyłam studia psychologiczne na
+                Uniwersytecie Jagiellońskim oraz czteroletnią szkołę psychoterapii. Prowadzę psychoterapię indywidualną
+                młodzieży i osób dorosłych oraz diagnozy.
+            </p>
+            <p>
+                Pracę zawodową rozpoczynałam od codziennego wspierania dzieci z zaburzeniami neurorozwojowymi, co dało
+                mi możliwość zrozumienia codziennego funkcjonowania dzieci z trudnościami i ich rodzin. Następnie
+                pracowałam w poradni psychologiczno – pedagogicznej, w szpitalu psychiatrycznym z osobami dorosłymi oraz
+                w środowiskowym centrum zdrowia psychicznego dla dzieci i młodzieży. Obecnie prowadzę terapię
+                indywidualną w gabinecie. Swoją pracę poddaję regularnej superwizji.
+            </p>
+            <p>
+                Ważną częścią mojej pracy jest diagnoza i wspieranie osób z ADHD i spektrum autyzmu. Ukończyłam w tym
+                obszarze liczne szkolenia, w tym dotyczące diagnozy kobiet.
+            </p>
+            <p>
+                W czasie wolnym dużo jeżdżę na rowerze, bardzo lubię też chodzić po górach. Kiedy pada deszcz – czytam,
+                oglądam filmy i szydełkuję.
+            </p>
+        </div>
+        <div class="col-md-4 col-sm-12 text-center">
+            <img class="w-100" src="{{ asset('images/oliwia-400.webp') }}"/>
         </div>
     </div>
 @endsection
