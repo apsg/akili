@@ -10,8 +10,8 @@
                 <ul>
                     <li>konsultacja psychologiczna – 250 zł</li>
                     <li>psychoterapia (dzieci, młodzież dorośli) – 220zł</li>
-                    <li>diagnoza zaburzeń ze spektrum autyzmu 1250 – 1400zł</li>
-                    <li>diagnoza ADHD – 1250zł</li>
+                    <li>diagnoza zaburzeń ze spektrum autyzmu 1500 – 1700 zł</li>
+                    <li>diagnoza ADHD – 1500 - 1700 zł</li>
                     <li>test MOXO wraz z omówieniem wyników – 420 zł</li>
                     <li>test ADOS-2 wraz z omówieniem wyników – 650 zł</li>
                     <li>diagnoza możliwości poznawczych wraz z omówieniem wyników – 520 zł</li>
