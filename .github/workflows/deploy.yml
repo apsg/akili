@@ -29,19 +29,19 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.KEY }}
           ARGS: "-rltgoDzvO"
           SOURCE: "/"
-          REMOTE_HOST: ${{ secrets.HOST }}
-          REMOTE_USER: ${{ secrets.USER }}
-          TARGET: ${{ secrets.TARGET }}
+          REMOTE_HOST: ${{ vars.HOST }}
+          REMOTE_USER: ${{ vars.USERNAME }}
+          TARGET: ${{ vars.TARGET }}
           EXCLUDE: "/node_modules/, /.idea/, /.git/, /vendor/, /.github/"
       - name: Creating .env file should go here
         run: echo "Creating env file..."
       - name: Composer and migrations
         uses: JimCronqvist/action-ssh@master
         with:
-          hosts: ${{ secrets.USER }}@${{ secrets.HOST }}
+          hosts: ${{ vars.USER }}@${{ secrets.HOST }}
           privateKey: ${{ secrets.KEY }}
           command: |
-            cd ${{ secrets.TARGET }}
+            cd ${{ vars.TARGET }}
             chown -R www-data:www-data .
             composer install --no-interaction --prefer-dist --optimize-autoloader
             php artisan cache:clear
