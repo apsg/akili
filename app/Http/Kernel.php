@@ -1,7 +1,6 @@
 <?php
 namespace App\Http;
 
-use Apsg\Zenboxer\Middlewares\HttpToHttpsRedirectMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
