@@ -23,6 +23,7 @@ jobs:
         run: npm install
       - name: Build assets
         run: npm run prod
+
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.6
         env:
@@ -31,19 +32,24 @@ jobs:
           SOURCE: "/"
           REMOTE_HOST: ${{ vars.HOST }}
           REMOTE_USER: ${{ vars.USERNAME }}
+          REMOTE_PORT: 10229
           TARGET: ${{ vars.TARGET }}
-          EXCLUDE: "/node_modules/, /.idea/, /.git/, /vendor/, /.github/"
-      - name: Creating .env file should go here
-        run: echo "Creating env file..."
+          EXCLUDE: "/node_modules/, /.idea/, /.git/, /vendor/, /.github/, /.agents/, /.claude/"
+        with:
+          REMOTE_HOST: ${{ vars.HOST }}
+          REMOTE_USER: ${{ vars.USERNAME }}
+          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
+
       - name: Composer and migrations
         uses: JimCronqvist/action-ssh@master
         with:
-          hosts: ${{ vars.USER }}@${{ secrets.HOST }}
+          hosts: ${{ vars.USERNAME }}@${{ vars.HOST }}:10229
           privateKey: ${{ secrets.KEY }}
           command: |
             cd ${{ vars.TARGET }}
             chown -R www-data:www-data .
             composer install --no-interaction --prefer-dist --optimize-autoloader
+            php artisan env:decrypt --env=production --key=${{ secrets.ENCRYPT_KEY }} --force --filename=.env
             php artisan cache:clear
             php artisan view:cache
             php artisan config:cache
