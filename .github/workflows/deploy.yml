@@ -42,13 +42,11 @@ jobs:
           privateKey: ${{ secrets.KEY }}
           command: |
             cd ${{ secrets.TARGET }}
-            ln -s public public_html
-            ln -s public public_html
-            php82 composer.phar install
-            php82 artisan migrate --force
-            php82 artisan cache:clear
-            php82 artisan view:cache
-            php82 artisan config:cache
-            php82 artisan storage:link
+            chown -R www-data:www-data .
+            composer install --no-interaction --prefer-dist --optimize-autoloader
+            php artisan cache:clear
+            php artisan view:cache
+            php artisan config:cache
+            php artisan storage:link
 
 
